@@ -1,0 +1,90 @@
+---
+title: "RStudio 0.99 Preview"
+author: "Becky Mak"
+date: "2015-07-08"
+output: 
+  html_document: 
+    highlight: zenburn
+    toc: yes
+---
+RStudio is the most common used integrated development environment (IDE) among R users. The easy to use but powerful interface enhance the efficieny and quality of writing better R code. On the late May this year, the [RStudio team annouced the new version of RStudio (0.99)] which provides more features to make it even better.
+
+
+###Data viewer (filtering, sorting and more)
+
+In previous version of RStudio, using the `view()` feature users can at most previewing __1000__ rows of data. If we needs to look at a middle part of data, we need to subset the data by code and then run the data viewer. And now, the data viewer can preview as much row as the data contains. What's more exciting, the user can only _preview_ the data in last version, but the current version can let users to interact with the data directly in the data viewer. It allows users click to filter, sort, and/or search within the data viewer without scripting.
+
+This new functionality can help with data screening on the exploratory stage. The easy and intutative way can help user to understand more the data before further analysis. 
+
+```{r eval=FALSE}
+data("mtcars")
+View(mtcars)
+```
+![screenshot1](screenshot/screenshot_1_data_viewer.gif)
+
+More on [Data viewer documentation]
+
+---
+
+## Code Editor
+
+![screenshot2](screenshot/screenshot_2_code_editor.gif)
+
+### Code Completeion
+
+In previous version, users still need to rememeber all the code accurately without any hint. We must keep searching the R help guide or manual for the accurate naming of code. Time is saved now by the new `code completion` features finally added into R studio. Like some of the other IDE, when user input the first few charater of a default function/ user-defined variable names, even a function in a loaded library, a list will appear for choose the require command. (Or you can invoke the completion list by pressing `Tab`.)
+
+### Code Diagnostics
+
+In the past, we need to run the R code in the R studio and check if there is any problem in our code. We may need a day to check and finally find out it is the typo in the variable name or a missing bracket. But now, once again like other IDE, R studio can now diagnose our code right in the coding area without running the code. An icon will be appear in the left and the problem part will be underlined for easy checking. Debugging our code is much easy and direct now.
+
+More on [Code Diagnostics documentation]
+
+### Code snippets
+Some code structure we will type so many times but they are developed from the same skeleton. Say, `if` and `apply`. To simplify and type less, RStudio now introduces a new feature names `code snippets`. For example, when you type `if` follow by a `Tab`, and select `{snippet}`, the skeleton of the `if` code will be automatically inserted
+
+More on [Code Snippets documentation]
+
+
+### Ace Editior
+In this version of R studio, the source editor incorprates with [Ace Editior], a famous open-source IDE on web with a lot of features and hot-key faciliate code editing. 
+
+#### Multiple cursors
+As an useful features in Ace editior, RStudio now is also supported for multiple cursors selection. Keep hold the `Alt` key, the cursor will turn to a cross, and users can select multiple lines and amend all at the same time.
+
+#### Vim mode enhanced
+Previous version of RStudio includes Vim mode for faster text editing, but not many noticed that. With the includsion of Ace Editior, the RStuido Vim mode are now upgraded. 
+
+More on [Vim mode improvements] and [Interactive Vim learning tutorial]
+
+---
+
+RStudio 0.99 still has much more features in this release. For example, if you are interseted in __Link analysis__, [RStudio with Graphiz and DiagrammeR] can generate link graph.
+[Download RStudio 0.99] to have a try or find out more on [RStudio v0.99 Preview Release Notes]. 
+
+---
+
+**Extend**
+
+[Download RStudio 0.99]:(https://www.rstudio.com/products/rstudio/download/)
+
+[RStudio v0.99 Preview Release Notes]:(http://www.rstudio.com/products/rstudio/download/preview-release-notes/)
+
+[RStudio team annouced the new version of RStudio (0.99)]:(http://blog.rstudio.org/2015/05/26/new-version-of-rstudio-v0-99/)
+
+[R Blogger Preview Series](http://www.r-bloggers.com/?s=RStudio+v0.99+Preview)
+
+
+[Data viewer documentation]:(https://support.rstudio.com/hc/en-us/articles/205175388-Using-the-Data-Viewer)
+
+[Code Diagnostics documentation]:(https://support.rstudio.com/hc/en-us/articles/205753617-Code-Diagnostics)
+
+[Code Snippets documentation]:(https://support.rstudio.com/hc/en-us/articles/204463668-Code-Snippets)
+
+[Vim mode improvements]:(http://blog.rstudio.org/2015/02/23/rstudio-0-99-preview-vim-mode-improvements/)
+
+[RStudio with Graphiz and DiagrammeR]:(https://plus.google.com/+SharonMachlis/posts/CKLJTRHxe5K)
+
+[Ace Editior]:(http://ace.c9.io/)
+
+[Interactive Vim learning tutorial]:(http://www.openvim.com/sandbox.html)
