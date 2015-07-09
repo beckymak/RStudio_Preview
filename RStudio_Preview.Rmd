@@ -20,7 +20,7 @@ This new functionality can help with data screening on the exploratory stage. Th
 data("mtcars")
 View(mtcars)
 ```
-![screenshot1](screenshot/screenshot_1_data_viewer.gif)
+![screenshot1](screenshot/screenshot_1_data_viewer_compress.gif)
 
 More on [Data viewer documentation]
 
@@ -28,11 +28,11 @@ More on [Data viewer documentation]
 
 ## Code Editor
 
-![screenshot2](screenshot/screenshot_2_code_editor.gif)
+![screenshot2](screenshot/screenshot_2_code_editor_compress.gif)
 
-### Code Completeion
+### Code Completion
 
-In previous version, users still need to rememeber all the code accurately without any hint. We must keep searching the R help guide or manual for the accurate naming of code. Time is saved now by the new `code completion` features finally added into R studio. Like some of the other IDE, when user input the first few charater of a default function/ user-defined variable names, even a function in a loaded library, a list will appear for choose the require command. (Or you can invoke the completion list by pressing `Tab`.)
+In previous version, users still need to remember all the code accurately without any hint. We must keep searching the R help guide or manual for the accurate naming of code. Time is saved now by the new `code completion` features finally added into R studio. Like some of the other IDE, when user input the first few charater of a default function/ user-defined variable names, even a function in a loaded library, a list will appear for choose the require command. (Or you can invoke the completion list by pressing `Tab`.)
 
 ### Code Diagnostics
 
@@ -53,13 +53,13 @@ In this version of R studio, the source editor incorprates with [Ace Editior], a
 As an useful features in Ace editior, RStudio now is also supported for multiple cursors selection. Keep hold the `Alt` key, the cursor will turn to a cross, and users can select multiple lines and amend all at the same time.
 
 #### Vim mode enhanced
-Previous version of RStudio includes Vim mode for faster text editing, but not many noticed that. With the includsion of Ace Editior, the RStuido Vim mode are now upgraded. 
+Previous version of RStudio includes Vim mode for faster text editing, but not many noticed that. With the inclusion of Ace Editor, the RStuido Vim mode are now upgraded. 
 
 More on [Vim mode improvements] and [Interactive Vim learning tutorial]
 
 ---
 
-RStudio 0.99 still has much more features in this release. For example, if you are interseted in __Link analysis__, [RStudio with Graphiz and DiagrammeR] can generate link graph.
+RStudio 0.99 still has much more features in this release. For example, if you are interested in __Link analysis__, [RStudio with Graphiz and DiagrammeR] can generate link graph.
 [Download RStudio 0.99] to have a try or find out more on [RStudio v0.99 Preview Release Notes]. 
 
 ---
